@@ -25,7 +25,7 @@ const login = async ({ email, password }: Auth) => {
 
   if (!isCorrect) return "password incorrect";
   
-  const token= await generateToken(checkIs.email)
+  const token= generateToken(checkIs.email)
   const data={
     token,
     user:checkIs
